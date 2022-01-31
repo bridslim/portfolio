@@ -1,0 +1,15 @@
+.Sidebar {
+    text-align: center;
+    height:100%;
+    width: 20%;
+    background-color: beige;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+.img{
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
