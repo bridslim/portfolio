@@ -2,9 +2,7 @@ import './Sidebar.css'
 
 const Sidebar = () => {
   return <div className='Sidebar'>
-      <div className='img'>
-        <img src="/face.jpg" alt=""></img>
-        </div>
+      <img src="/face.jpg" alt=""></img>
       <h1>Bridget Lim</h1>
       <p>About me</p>
       <p>Education</p>
