@@ -5,6 +5,25 @@
     flex-wrap: wrap;
 }
 
+.Sidebar {
+    text-align: center;
+    height:100%;
+    width: 20%;
+    background-color: beige;
+    top:0;
+}
+
+.rightSide{
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.button{
+    color: black;
+    font-style: italic;
+}
+
 body {
     margin:0;
     padding:0;
