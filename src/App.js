@@ -8,15 +8,15 @@ import { useState } from 'react'
 function App() {
   const [page, setPage] = useState(0)
   
-  const aboutme = () => {
+  const setAboutMe = () => {
     setPage(0);
   }
 
-  const education = () => {
+  const setEducation = () => {
     setPage(1);
   }
 
-  const pagelink = () => {
+  const displayPage = () => {
     if (page == 0) {
       return <AboutMe/>
     }
@@ -28,8 +28,8 @@ function App() {
     return <div className='Sidebar'>
         <img src="../public/face.jpg" alt=""></img>
         <h1>Bridget Lim</h1>
-        <p><button onClick={()=> aboutme()}>About me</button></p>
-        <p><button onClick={()=> education()}>Education</button></p>
+        <p><button onClick={()=> setAboutMe()}>About me</button></p>
+        <p><button onClick={()=> setEducation()}>Education</button></p>
         <p>Work Experience</p>
         <p>Volunteer</p>
         <h2>Hit me up!</h2>
@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <Sidebar/>
-      {pagelink()}
+      {displayPage()}
     </div>
 
     )
