@@ -1,5 +1,4 @@
 .aboutMe{
-    flex-direction: column;
 }
 
 .Top{
@@ -17,7 +16,6 @@
   .Left{
       width:55%;
       text-align: center;
-
   }
 
   .Bottom{

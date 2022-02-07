@@ -6,10 +6,10 @@ const Sidebar = ({setPage}) => {
       <img className="face" src={face} width="160" height = "160" />
       <div className='Main'>
         <h1>Bridget Lim</h1>
-        <p><button onClick={()=> setPage(0)}>About me</button></p>
-        <p><button onClick={()=> setPage(1)}>Education</button></p>
-        <p><button onClick={()=> setPage(2)}>Work Experience</button></p>
-        <p><button onClick={()=> setPage(3)}>Volunteering</button></p>
+        <p><button onClick={()=> setPage(1)}>About me</button></p>
+        <p><button onClick={()=> setPage(2)}>Education</button></p>
+        <p><button onClick={()=> setPage(3)}>Work Experience</button></p>
+        <p><button onClick={()=> setPage(4)}>Others</button></p>
       </div>
       <div className='ContactInfo'>
       <h2>Connect with me</h2>

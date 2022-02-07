@@ -1,10 +1,10 @@
 import './WorkExperience.css'
 
 const Job1 = () => {
-    return (<div className='Job1'>
-        <h2>Role</h2>
-        <h1>Company</h1>
-        <p>Duration</p>
+    return (<div className='Job'>
+        <h2>Product and Operations Intern</h2>
+        <h1>Digital Church Office, Roman Catholic Archdiocese of Singapore</h1>
+        <p>Jan 2022 - Current</p>
         <p>Point</p>
         <p>Point</p>
         <p>Point</p>
@@ -13,7 +13,7 @@ const Job1 = () => {
     )
 }
 const Job2 = () => {
-    return (<div className='Job2'>
+    return (<div className='Job'>
         <h2>Statisical Analyst, Part-Time</h2>
         <h1>Midland Metals Overseas Pte Ltd</h1>
         <p>Feb 2021 - Dec 2021</p>
@@ -26,7 +26,7 @@ const Job2 = () => {
     )
 }
 const Job3 = () => {
-    return (<div className='Job3'>
+    return (<div className='Job'>
         <h2>Data Analytics Intern</h2>
         <h1>Mama's Choice Singapore</h1>
         <p>Nov 2020 - Jan 2021</p>
@@ -40,13 +40,13 @@ const Job3 = () => {
 }
 
 const Job4 = () => {
-    return (<div className='Job4'>
-        <h2>Role</h2>
-        <h1>Company</h1>
-        <p>Duration</p>
-        <p>Point</p>
-        <p>Point</p>
-        <p>Point</p>
+    return (<div className='Job'>
+        <h2>Relief Teacher, Teaching Intern</h2>
+        <h1>Ministry of Education</h1>
+        <p>Jan 2018 - June 2018</p>
+        <p>St. Gabriel's Secondary School, Victoria Junior College, specialising in Mathematics and Physics.</p>
+        <p>- Taught tutorials and labs sessions as a substitute for teachers, created answer sheets.</p>
+        <p>- Engaged in department meetings, oversaw Co-Curricular Activities (CCA)</p>
     </div>
         
     )
@@ -57,12 +57,10 @@ const WorkExperience = () => {
     <div className="Top">
       <h1>Work Experience</h1>
     </div>
-    <div className="Bottom">
         <Job1 />
         <Job2 />
         <Job3 />
         <Job4 />
-    </div>
     </div>
     )
 };
