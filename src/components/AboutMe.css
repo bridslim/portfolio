@@ -1,2 +1,60 @@
 .aboutMe{
+    flex-direction: column;
+}
+
+.Top{
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 40px;
+    text-decoration:underline;
+    height: 20%;
+}
+
+  .Right{
+      width: 45%;
+  }
+
+  .Left{
+      width:55%;
+      text-align: center;
+
+  }
+
+  .Bottom{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 80%;
+  }
+
+  .profile{
+    max-width: 100%;
+    max-height: 80%;
+    margin-top: 20px;
+    border-radius: 10%;
+    float: right;
+  }
+
+  .Intro{
+      margin-bottom: 30px;
+      text-align: left;
+      padding: 10px;
+  }
+  .Skills{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 10px;
+      border: 1px solid black;
+      padding: 10px;
+      row-gap: 10px;
+  }
+
+  .Interests{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    row-gap: 10px;
 }

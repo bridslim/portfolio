@@ -1,9 +1,7 @@
 import './Sidebar.css'
 import face from './images/face.jpg'
+
 const Sidebar = ({setPage}) => {
-  const onButtonClick = (value) => {
-    setPage(value)
-  }
   return <div className='Sidebar'>
       <img className="face" src={face} width="160" height = "160" />
       <div className='Main'>

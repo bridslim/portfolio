@@ -3,6 +3,7 @@ import AboutMe from "./components/AboutMe";
 import Education from "./components/Education"
 import Sidebar from "./components/Sidebar";
 import { useState } from 'react'
+import WorkExperience from "./components/WorkExperience";
 
 function App() {
   const [page, setPage] = useState(0)
@@ -12,6 +13,9 @@ function App() {
     }
     if (page == 1) {
       return <Education/>
+    }
+    if (page == 2) {
+      return <WorkExperience/>
     }
   }
   return (
