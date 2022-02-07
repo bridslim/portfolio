@@ -1,26 +1,30 @@
 import './Sidebar.css'
-import { useState } from "react"; 
-
-const Sidebar = () => {
+import face from './images/face.jpg'
+const Sidebar = ({setPage}) => {
+  const onButtonClick = (value) => {
+    setPage(value)
+  }
   return <div className='Sidebar'>
-      <img src="/face.jpg" alt=""></img>
-      <h1>Bridget Lim</h1>
-      <p>About me</p>
-      <p>Education</p>
-      <p>Work Experience</p>
-      <p>Volunteer</p>
-      <h2>Hit me up!</h2>
-        <p>bridgetgraceb@gmail.com</p>
-        <p> 
-        <a
-          href="https://www.linkedin.com/in/bridget-lim-b960a619b/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn Profile
+      <img className="face" src={face} width="160" height = "160" />
+      <div className='Main'>
+        <h1>Bridget Lim</h1>
+        <p><button onClick={()=> setPage(0)}>About me</button></p>
+        <p><button onClick={()=> setPage(1)}>Education</button></p>
+        <p><button onClick={()=> setPage(2)}>Work Experience</button></p>
+        <p><button onClick={()=> setPage(3)}>Volunteering</button></p>
+      </div>
+      <div className='ContactInfo'>
+      <h2>Connect with me</h2>
+      <p>bridgetgraceb@gmail.com</p>
+      <p> 
+      <a href="https://www.linkedin.com/in/bridget-lim-b960a619b/"
+        target="_blank"
+        rel="noopener noreferrer">
+        LinkedIn Profile
         </a>
-        </p>
-  </div>;
-};
+      </p>
+      </div>
+  </div>
+}
 
 export default Sidebar;
